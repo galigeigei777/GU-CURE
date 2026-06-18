@@ -42,7 +42,6 @@ class ExpCURE(Exp):
 
         if unlearning_method == 'CURE':
             t, f1, self.unlearned_model = self.CURE()
-            print(f"F1={f1:.4f}, time={t:.2f}s")
         else:
             raise ValueError(f"erro: {unlearning_method}")
 
