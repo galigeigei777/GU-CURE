@@ -196,7 +196,7 @@ class ExpCURE(Exp):
         all_labels = np.concatenate(all_labels)
         f1 = f1_score(all_labels, all_preds, average='micro')
 
-        print("ACC: {:4f}, F1 : {:4f},time : {:4f}".format(train_acc, f1, train_end - train_start))
+        print("F1 : {:4f},time : {:4f}".format(f1, train_end - train_start))
         training_test_f1 = f1
         return training_test_f1
 
